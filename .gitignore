@@ -1,0 +1,69 @@
+# ==========================================================
+# Proyecto Flutter - Solo subir carpeta lib y archivos clave
+# ==========================================================
+
+# Ignorar todo por defecto
+/*
+
+# Incluir carpeta lib y su contenido
+!/lib/
+!/lib/**
+
+# Incluir pubspec.yaml (para dependencias)
+!/pubspec.yaml
+
+# Incluir este archivo .gitignore
+!.gitignore
+
+# ===================================
+# Archivos temporales o del sistema
+# ===================================
+*.log
+*.tmp
+*.swp
+*.class
+*.pyc
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# ===================================
+# IDEs y herramientas
+# ===================================
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+
+# ===================================
+# Flutter/Dart/Pub related
+# ===================================
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
+
+# ===================================
+# Android build artifacts
+# ===================================
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ===================================
+# Symbolication / Obfuscation
+# ===================================
+app.*.symbols
+app.*.map.json
