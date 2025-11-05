@@ -2,7 +2,6 @@ import 'package:checador_asistencia_u3/ventana2.dart';
 import 'package:flutter/material.dart';
 import 'profesor.dart';
 import 'bdcheck.dart';
-import 'ventana2.dart';
 
 class AppCheck extends StatefulWidget {
   const AppCheck({super.key});

@@ -49,4 +49,9 @@ class DB {
     Database base = await _conectarDB();
     return base.insert("PROFESOR", p.toJSON());
   }
+
+  static Future<int> EliminarProfesor(String nprofesor) async{
+    Database base = await _conectarDB();
+    return base.delete("PROFESOR", where: "NPROFESOR=?", whereArgs: [nprofesor]);
+  }
 }
