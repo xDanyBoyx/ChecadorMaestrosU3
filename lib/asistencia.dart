@@ -12,6 +12,19 @@ class Asistencia {
   });
 
   Map<String, dynamic> toJSON() {
-    return {'nhorario': nhorario, 'fecha': fecha, 'asistencia': asistencia};
+    return {
+      'NHORARIO': nhorario,
+      'FECHA': fecha,
+      'ASISTENCIA': asistencia ? 1 : 0,
+    };
+  }
+
+  factory Asistencia.fromMap(Map<String, dynamic> m) {
+    return Asistencia(
+      idasistencia: m['IDASISTENCIA'],
+      nhorario: m['NHORARIO'],
+      fecha: m['FECHA'],
+      asistencia: (m['ASISTENCIA'] == 1),
+    );
   }
 }
